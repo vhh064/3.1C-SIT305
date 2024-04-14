@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/question_text5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:height="50dp"
+        android:background="#5BE4E4"
+        android:gravity="center_horizontal"
+        android:padding="8dp"
+        android:text="5.  What is 22 * 45?"
+        android:textColorLink="#D88686"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/answers_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_text5"
+        android:layout_marginTop="24dp">
+
+
+        <RadioButton
+            android:id="@+id/answer1"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:height="50dp"
+            android:background="#F2F3F4"
+            android:text="980" />
+
+
+        <RadioButton
+            android:id="@+id/answer2"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:height="50dp"
+            android:background="#E8ECEF"
+            android:text="1000" />
+
+        <RadioButton
+            android:id="@+id/answer3"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:height="50dp"
+            android:background="#E8EAEC"
+            android:text="1100" />
+
+
+        <RadioButton
+            android:id="@+id/answer4"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:height="50dp"
+            android:background="#E9EBEC"
+            android:text="990" />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/submit_button5"
+        android:layout_width="219dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/answers_group"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="80dp"
+        android:background="#8B574939"
+        android:maxLength="40"
+        android:text="Submit Answer"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/next_question_button5"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/answers_group"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="131dp"
+        android:layout_marginEnd="80dp"
+        android:background="#8B935507"
+        android:maxLength="40"
+        android:text="Next question"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
